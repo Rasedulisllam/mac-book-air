@@ -26,21 +26,21 @@
                 <!-- configar buttons section -->
                <div class="memory my-6 mt-12">
                 <h3 class="text-2xl font-semibold my-3">Memory</h3>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">8GB unified memory</button>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">16GB unified memory</button>
+                <button id="memory-8gb" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">8GB unified memory</button>
+                <button id="memory-16gb" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">16GB unified memory</button>
                </div>
-
+               <!-- storage buttons -->
                <div class="storage  my-6">
                 <h3 class="text-2xl font-semibold my-3">Storage</h3>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">256GB SSD storage</button>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">500GB SSD storage</button>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">1TB SSD storage</button>
+                <button id="storage-256gb" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">256GB SSD storage</button>
+                <button id="storage-500gb" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">500GB SSD storage</button>
+                <button id="storage-1tb" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">1TB SSD storage</button>
                </div>
-
+               <!-- delivery buttons -->
                <div class="choose-delivery  my-6">
                 <h3 class="text-2xl font-semibold my-3">Choose your delivery option</h3>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">Friday,Aug 25 FREE Prime Delivery</button>
-                <button class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">Friday,Aug 21 FREE Prime Delivery</button>
+                <button id="delivary-wednesday" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">Wednesday,Aug 25 FREE Prime Delivery</button>
+                <button id="delivary-friday" class="px-4 py-2 me-2 text-gray-600 text-base border border-gray-400 rounded-lg hover:bg-gray-600 duration-300 hover:text-white font-medium ">Friday,Aug 21 FREE Prime Delivery</button>
                </div>
                <!-- price table section -->
                <div class="price-table my-6 mt-12">
@@ -48,25 +48,25 @@
                        <tbody>
                             <tr class="border-b border-gray-400 border-opacity-60">
                                 <td class="py-2 font-bold  ">Best price</td>
-                                <td class="py-2 font-bold  ">$<span>1299</span></td>
+                                <td class="py-2 font-bold  ">$<span id="base-cost-field">1299</span></td>
                             </tr>
                             <tr class="border-b border-gray-400 border-opacity-60">
                                 <td class="py-2 font-bold  ">Extra Memory Cost</td>
-                                <td class="py-2 font-bold  ">$<span>0</span></td>
+                                <td class="py-2 font-bold  ">$<span id="memory-cost-field">0</span></td>
                             </tr>
                             <tr class="border-b border-gray-400 border-opacity-60">
                                 <td class="py-2 font-bold  ">Extra Storage Cost</td>
-                                <td class="py-2 font-bold  ">$<span>0</span></td>
+                                <td class="py-2 font-bold  ">$<span id="storage-cost-field">0</span></td>
                             </tr>
                             <tr class="border-b-2 border-gray-600 border-opacity-60">
                                 <td class="py-2 font-bold  ">Delivery Charge</td>
-                                <td class="py-2 font-bold  ">$<span>0</span></td>
+                                <td class="py-2 font-bold  ">$<span id="delivery-cost-field">0</span></td>
                             </tr>
                        </tbody>
                        <tfoot>
                             <tr>
                                 <td class="py-2 font-bold  ">Total Price</td>
-                                <td class="py-2 font-bold  ">$<span>1299</span></td>
+                                <td class="py-2 font-bold  ">$<span id="total-price">1299</span></td>
                             </tr>
                        </tfoot>
                    </table>
@@ -83,7 +83,7 @@
 
         <!-- section footer section -->
         <div class="section-footer container mx-auto border-t border-gray-400 border-opacity-50">
-            <h2 class="text-center font-semibold text-3xl my-6">Total: $<span>1299</span></h2>
+            <h2 class="text-center font-semibold text-3xl my-6">Total: $<span id="final-total-cost">1299</span></h2>
         </div>
     </section>
 
