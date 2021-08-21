@@ -48,5 +48,20 @@ document.getElementById("delivary-wednesday").addEventListener('click',function(
     UpdatePriceField("delivery",0)
 })
 document.getElementById("delivary-friday").addEventListener('click',function(){
-    UpdatePriceField("delivery",100)
+    UpdatePriceField("delivery",20)
+})
+
+
+// =============== pomo button handle========
+
+document.getElementById('pomo-btn').addEventListener('click',function(){
+    const pomoInput=document.getElementById('pomo-input').value;
+    const finalTotalField=document.getElementById('final-total-cost');
+    const totalPrice=document.getElementById('total-price');
+    if(pomoInput=="stevekaku" && totalPrice.innerText==finalTotalField.innerText ){
+        const finalTotalValue=parseFloat(finalTotalField.innerText);
+        const pomoDiscount=finalTotalValue*20/100;
+        const finalTotal=finalTotalValue-pomoDiscount;
+        finalTotalField.innerText=finalTotal;
+    }   
 })
