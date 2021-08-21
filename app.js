@@ -55,13 +55,14 @@ document.getElementById("delivary-friday").addEventListener('click',function(){
 // =============== pomo button handle========
 
 document.getElementById('pomo-btn').addEventListener('click',function(){
-    const pomoInput=document.getElementById('pomo-input').value;
+    const pomoInput=document.getElementById('pomo-input');
     const finalTotalField=document.getElementById('final-total-cost');
     const totalPrice=document.getElementById('total-price');
-    if(pomoInput=="stevekaku" && totalPrice.innerText==finalTotalField.innerText ){
+    if(pomoInput.value=="stevekaku" && totalPrice.innerText==finalTotalField.innerText ){
         const finalTotalValue=parseFloat(finalTotalField.innerText);
         const pomoDiscount=finalTotalValue*20/100;
         const finalTotal=finalTotalValue-pomoDiscount;
         finalTotalField.innerText=finalTotal;
-    }   
+    }
+    pomoInput.value='';  
 })
